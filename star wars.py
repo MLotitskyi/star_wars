@@ -1,8 +1,6 @@
 from tkinter import *
-from time import *
 from random import *
 from tkinter import messagebox
-from threading import *
 
 def shot(event):
     global bullet, img_bullet, img_ship_1, first, second, bullet_1, img_bullet_1, third, fourth, fifth
@@ -11,7 +9,6 @@ def shot(event):
     object = c.coords(img_ship_1)
     objx = int(object[0])
     objy = int(object[1])
-    print(objx, objy)
     if first == True:
         bullet = PhotoImage(file=images['bullet'])
         img_bullet = c.create_image(objx, objy, image=bullet)
@@ -56,7 +53,6 @@ def bullet_fly_1():
     if -20 < c.coords(img_enemy_1)[0] - x1y1[0] < 40:
         if -20 < c.coords(img_enemy_1)[1] - x1y1[1] < 40:
             explosing(coo=c.coords(img_bullet))
-            print(c.coords(img_enemy_1)[1] - x1y1[1])
             bullet_1_1 = False
             first = True
             lab3.config(text='')
@@ -69,7 +65,6 @@ def bullet_fly_1():
     if -20 < c.coords(img_enemy_2)[0] - x1y1[0] < 40:
         if -20 < c.coords(img_enemy_2)[1] - x1y1[1] < 40:
             explosing(coo=c.coords(img_bullet))
-            print(c.coords(img_enemy_2)[1] - x1y1[1])
             bullet_1_1 = False
             first = True
             lab3.config(text='')
@@ -82,7 +77,6 @@ def bullet_fly_1():
     if -20 < c.coords(img_enemy_3)[0] - x1y1[0] < 40:
         if -20 < c.coords(img_enemy_3)[1] - x1y1[1] < 40:
             explosing(coo=c.coords(img_bullet))
-            print(c.coords(img_enemy_3)[1] - x1y1[1])
             bullet_1_1 = False
             first = True
             lab3.config(text='')
@@ -95,7 +89,6 @@ def bullet_fly_1():
     if -20 < c.coords(img_enemy_4)[0] - x1y1[0] < 40:
         if -20 < c.coords(img_enemy_4)[1] - x1y1[1] < 40:
             explosing(coo=c.coords(img_bullet))
-            print(c.coords(img_enemy_4)[1] - x1y1[1])
             bullet_1_1 = False
             first = True
             lab3.config(text='')
@@ -141,7 +134,6 @@ def bullet_fly_2():
     if -20 < c.coords(img_enemy_1)[0] - x2y2[0] < 40:
         if -20 < c.coords(img_enemy_1)[1] - x2y2[1] < 40:
             explosing(coo=c.coords(img_bullet_1))
-            print('sefwar')
             bullet_2_2 = False
             second = True
             lab3.config(text='')
@@ -154,7 +146,6 @@ def bullet_fly_2():
     if -20 < c.coords(img_enemy_2)[0] - x2y2[0] < 40:
         if -20 < c.coords(img_enemy_2)[1] - x2y2[1] < 40:
             explosing(coo=c.coords(img_bullet_1))
-            print(c.coords(img_enemy_2)[1] - x2y2[1])
             bullet_2_2 = False
             second = True
             lab3.config(text='')
@@ -167,7 +158,6 @@ def bullet_fly_2():
     if -20 < c.coords(img_enemy_3)[0] - x2y2[0] < 40:
         if -20 < c.coords(img_enemy_3)[1] - x2y2[1] < 40:
             explosing(coo=c.coords(img_bullet_1))
-            print(c.coords(img_enemy_3)[1] - x2y2[1])
             bullet_2_2 = False
             second = True
             lab3.config(text='')
@@ -180,7 +170,6 @@ def bullet_fly_2():
     if -20 < c.coords(img_enemy_4)[0] - x2y2[0] < 40:
         if -20 < c.coords(img_enemy_4)[1] - x2y2[1] < 40:
             explosing(coo=c.coords(img_bullet_1))
-            print(c.coords(img_enemy_4)[1] - x2y2[1])
             bullet_2_2 = False
             second = True
             lab3.config(text='')
@@ -206,7 +195,6 @@ def bullet_fly_3():
     if -20 < c.coords(img_enemy_1)[0] - x3y3[0] < 40:
         if -20 < c.coords(img_enemy_1)[1] - x3y3[1] < 40:
             explosing(coo=c.coords(img_bullet_2))
-            print('sefwar')
             bullet_3_3 = False
             third = True
             lab3.config(text='')
@@ -219,7 +207,6 @@ def bullet_fly_3():
     if -20 < c.coords(img_enemy_2)[0] - x3y3[0] < 40:
         if -20 < c.coords(img_enemy_2)[1] - x3y3[1] < 40:
             explosing(coo=c.coords(img_bullet_2))
-            print('sefwar')
             bullet_3_3 = False
             third = True
             lab3.config(text='')
@@ -232,7 +219,6 @@ def bullet_fly_3():
     if -20 < c.coords(img_enemy_3)[0] - x3y3[0] < 40:
         if -20 < c.coords(img_enemy_3)[1] - x3y3[1] < 40:
             explosing(coo=c.coords(img_bullet_2))
-            print('sefwar')
             bullet_3_3 = False
             third = True
             lab3.config(text='')
@@ -245,7 +231,6 @@ def bullet_fly_3():
     if -20 < c.coords(img_enemy_4)[0] - x3y3[0] < 40:
         if -20 < c.coords(img_enemy_4)[1] - x3y3[1] < 40:
             explosing(coo=c.coords(img_bullet_2))
-            print('sefwar')
             bullet_3_3 = False
             third = True
             lab3.config(text='')
@@ -271,7 +256,6 @@ def bullet_fly_4():
     if -20 < c.coords(img_enemy_1)[0] - x4y4[0] < 40:
         if -20 < c.coords(img_enemy_1)[1] - x4y4[1] < 40:
             explosing(coo=c.coords(img_bullet_3))
-            print('sefwar')
             bullet_4_4 = False
             fourth = True
             lab3.config(text='')
@@ -284,7 +268,6 @@ def bullet_fly_4():
     if -20 < c.coords(img_enemy_2)[0] - x4y4[0] < 40:
         if -20 < c.coords(img_enemy_2)[1] - x4y4[1] < 40:
             explosing(coo=c.coords(img_bullet_3))
-            print('sefwar')
             bullet_4_4 = False
             fourth = True
             lab3.config(text='')
@@ -297,7 +280,6 @@ def bullet_fly_4():
     if -20 < c.coords(img_enemy_3)[0] - x4y4[0] < 40:
         if -20 < c.coords(img_enemy_3)[1] - x4y4[1] < 40:
             explosing(coo=c.coords(img_bullet_3))
-            print('sefwar')
             bullet_4_4 = False
             fourth = True
             lab3.config(text='')
@@ -310,7 +292,6 @@ def bullet_fly_4():
     if -20 < c.coords(img_enemy_4)[0] - x4y4[0] < 40:
         if -20 < c.coords(img_enemy_4)[1] - x4y4[1] < 40:
             explosing(coo=c.coords(img_bullet_3))
-            print('sefwar')
             bullet_4_4 = False
             fourth = True
             lab3.config(text='')
@@ -336,7 +317,6 @@ def bullet_fly_5():
     if -20 < c.coords(img_enemy_1)[0] - x5y5[0] < 40:
         if -20 < c.coords(img_enemy_1)[1] - x5y5[1] < 40:
             explosing(coo=c.coords(img_bullet_4))
-            print('sefwar')
             bullet_5_5 = False
             fifth = True
             lab3.config(text='')
@@ -349,7 +329,6 @@ def bullet_fly_5():
     if -20 < c.coords(img_enemy_2)[0] - x5y5[0] < 40:
         if -20 < c.coords(img_enemy_2)[1] - x5y5[1] < 40:
             explosing(coo=c.coords(img_bullet_4))
-            print('sefwar')
             bullet_5_5 = False
             fifth = True
             lab3.config(text='')
@@ -362,7 +341,6 @@ def bullet_fly_5():
     if -20 < c.coords(img_enemy_3)[0] - x5y5[0] < 40:
         if -20 < c.coords(img_enemy_3)[1] - x5y5[1] < 40:
             explosing(coo=c.coords(img_bullet_4))
-            print('sefwar')
             bullet_5_5 = False
             fifth = True
             lab3.config(text='')
@@ -375,7 +353,6 @@ def bullet_fly_5():
     if -20 < c.coords(img_enemy_4)[0] - x5y5[0] < 40:
         if -20 < c.coords(img_enemy_4)[1] - x5y5[1] < 40:
             explosing(coo=c.coords(img_bullet_4))
-            print('sefwar')
             bullet_5_5 = False
             fifth = True
             lab3.config(text='')
@@ -441,21 +418,18 @@ def back_game_to_set():
 def get_ship_1():
     global fon_ship
     fon_ship = images['ship_1']
-    print(fon_ship)
     canvas_ship_set.forget()
     canvas_set.pack()
 
 def get_ship_2():
     global fon_ship
     fon_ship = images['ship_2']
-    print(fon_ship)
     canvas_ship_set.forget()
     canvas_set.pack()
 
 def get_ship_3():
     global fon_ship
     fon_ship = images['ship_3']
-    print(fon_ship)
     canvas_ship_set.forget()
     canvas_set.pack()
 
@@ -466,21 +440,18 @@ def back_ship_to_win():
 def get_sky_1():
     global fon_game
     fon_game = images['sky_1']
-    print(fon_game)
     canvas_game_set.forget()
     canvas_set.pack()
 
 def get_sky_2():
     global fon_game
     fon_game = images['sky_2']
-    print(fon_game)
     canvas_game_set.forget()
     canvas_set.pack()
 
 def get_sky_3():
     global fon_game
     fon_game = images['sky_3']
-    print(fon_game)
     canvas_game_set.forget()
     canvas_set.pack()
 
@@ -952,7 +923,7 @@ number_exp = 5
 
 speed_enemy = 1
 speed_of_ship = 3
-number_of_enemy = 2
+number_of_enemy = 20
 num_of_enemy = number_of_enemy
 speed_of_bullet = 5
 
