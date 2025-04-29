@@ -1,32 +1,35 @@
-# 1. Завантаження середовища для програмування на мові Python
+# 1. Installing the Development Environment for Python Programming
 
 + [PyCharm](https://www.jetbrains.com/ru-ru/pycharm/download/#section=windows)
 
-Завантажте останню версію
+Download the latest version.
 ***
-Ви маєте відкрити файл в завантаженнях, і завантажити його<br/>
-Після цього створіть новий файл:<br/>
-  + Нажміть **Create New Project**<br/>
-  + Виберіть місце розташування в пункті __Location:__<br/>
-  + З лівого боку в пустому місці нажміть правою клавішею миші<br/>
-  + І виберіть пункт __New__<br/>
-  + Наведіть на підпункт __Python File__<br/>
-  + Потім дайте йому назву і нажміть __Enter__
+You need to open the file in downloads and download it.  
+After that, create a new file:  
+  + Click **Create New Project**  
+  + Select the location in the **Location:** field  
+  + On the left side, right-click in an empty space  
+  + Choose **New**  
+  + Hover over the **Python File** option  
+  + Then give it a name and press **Enter**  
 ***
-# 2. Код та малюнки
-1. Створіть папку в ком'юторі
-2. Завантажте усі малюнки що входять до репозиторій<br/>
-3. Дайте назву малюнкам ідентичну, що є в репозиторії
-4. Додайте до папки усі малюнки
-5. Переконайтеся чи малюнків 10 і чи їхня назва сходиться з назвою в репозиторії
-6. Додайте новий файл, що ви створили в PyCharm, до папки з малюнками
-7. В цьому репозиторії знайдіть файл __star wars__ , та відкрийте його
-8. Нажміть __ctrl+a__ , та зайдіть в проєкт PyCharm
-9. Вставте код, нажавши __ctrl+v__ 
-# 3. Запуск
-Нажміть правою клавішею миші на код в PyCharm<br/>
-Натисніть __Run__
-# 4. Керування
-__w__ -- вверх<br/>
-__s__ -- вниз<br/>
-__g__ -- стріляти
+
+# 2. Code and Images
+1. Create a folder on your computer.  
+2. Download all the images included in the repository.  
+3. Rename the images to match the names in the repository.  
+4. Add all the images to the folder.  
+5. Make sure there are 10 images, and their names match the ones in the repository.  
+6. Add the new file you created in PyCharm to the folder with the images.  
+7. In this repository, find the file **star wars**, and open it.  
+8. Press **ctrl+a** and go to the PyCharm project.  
+9. Paste the code by pressing **ctrl+v**  
+
+# 3. Running
+Right-click on the code in PyCharm.  
+Click **Run**  
+
+# 4. Controls
+**w** -- move up  
+**s** -- move down  
+**g** -- shoot
